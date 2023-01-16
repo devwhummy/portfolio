@@ -1,0 +1,198 @@
+:root {
+    --black: #080808;
+    --grey: #1B1B1B;
+    --white: #FFFFFF;
+    --dark-white: #F5F5F5;
+    --text-color: #9C9C9C;
+    --green: #3F8E00;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'IBM Plex Mono';
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    justify-content: center;
+    align-items: center;
+    margin: 50px 0;
+}
+
+.btn {
+    color: var(--white);
+    background-color: var(--green);
+    padding: 21px 64px;
+    display: inline-block;
+    border-radius: 5px;
+    box-shadow: 0px 8px 30px 0px #3F8E0080;
+    border: 1px solid #62BA1B;
+    font-size: 16px;
+}
+
+.btn-view-case {
+    color: var(--white);
+    box-shadow: 0px 8px 30px rgba(42, 176, 144, 0.1);
+    border-radius: 4px;
+    border: 0;
+    padding: 10px 24px;
+    margin: 25px 0;
+    display: inline-block;
+}
+
+.btn-view-case-one {
+    background-color: #FFA217;
+}
+
+.btn-view-case-two {
+    background-color: #000AFF;
+}
+
+.btn-view-case-three {
+    background-color: #2AB090;
+}
+
+.center-text {
+    text-align: center;
+}
+
+.btn-logo {
+    font-family: IBM Plex Mono;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.01em;
+    border-radius: 60px;
+    padding: 0 10px;
+}
+
+.btn-logo-one {
+    background-color: #FFF6E9;
+    color: #FFA217;
+}
+
+.btn-logo-two {
+    background-color: #D0E6FF;
+    color: #000AFF;
+}
+
+.btn-logo-three {
+    background-color: #E0FFF8;
+    color: #2AB090;
+}
+
+.br {
+    border-radius: 5px;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+p {
+    color: var(--text-color);
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style-type: none;
+}
+
+nav li {
+    display: inline;
+    margin-right: 15px;
+}
+
+nav a {
+    margin-right: 120px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    letter-spacing: 0.01em;
+    color: var(--text-color);
+}
+
+nav .container {
+    background-color: #1B1B1B;
+    padding: 24px 95px;
+    border-radius: 0 0 5px 5px;
+}
+
+nav {
+    background-color: var(--black);
+}
+
+/* header */
+.header {
+    background-color: var(--black);
+    padding-bottom: 68px;
+    padding-top: 141px;
+}
+
+.header-image img {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    /* margin-left: 100px; */
+}
+
+.header-text h1 {
+    color: var(--white);
+    font-family: 'Raleway';
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 52px;
+}
+
+.header-text p {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.box {
+    border: 1px solid #1B1B1B;
+    padding: 25px 50px;
+    border-radius: 5px;
+    color: #eee;
+}
+
+/* Case Studies */
+.case-studies {
+    background-color: var(--dark-white);
+    padding: 80px 0;
+}
+
+.case-studies h2 {
+    color: var(--black);
+    font-family: Raleway;
+    font-weight: 800;
+    font-size: 34px;
+    line-height: 39.92px;
+}
+
+.case-studies h3 {
+    font-size: 24px;
+    color: var(--black);
+    padding: 10px 0;
+}
