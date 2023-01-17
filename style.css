@@ -5,6 +5,9 @@
     --dark-white: #F5F5F5;
     --text-color: #9C9C9C;
     --green: #3F8E00;
+
+    /* border-radius */
+    --br: 4px;
 }
 
 * {
@@ -31,7 +34,7 @@ body {
 .grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 30px;
     justify-content: center;
     align-items: center;
     margin: 50px 0;
@@ -46,6 +49,10 @@ body {
     box-shadow: 0px 8px 30px 0px #3F8E0080;
     border: 1px solid #62BA1B;
     font-size: 16px;
+}
+
+.btn-recent-work {
+    padding: 10px 24px;
 }
 
 .btn-view-case {
@@ -98,17 +105,30 @@ body {
     background-color: #E0FFF8;
     color: #2AB090;
 }
+/* check this */
+/* .br {
+    border-radius: 4px;
+} */
 
-.br {
-    border-radius: 5px;
+/* img {
+    border-radius: var(--br);
+} */
+
+h1, h2, h3 {
+    font-family: 'Raleway';
 }
 
-h1, h2 {
+h1 {
     margin-bottom: 20px;
+}
+
+h2, h3 {
+    margin-bottom: 10px;
 }
 
 p {
     color: var(--text-color);
+    font-size: 14px;
 }
 
 a {
@@ -159,14 +179,12 @@ nav {
 
 .header-text h1 {
     color: var(--white);
-    font-family: 'Raleway';
     font-weight: 800;
     font-size: 44px;
     line-height: 52px;
 }
 
 .header-text p {
-    font-size: 20px;
     margin-bottom: 30px;
 }
 
@@ -185,7 +203,6 @@ nav {
 
 .case-studies h2 {
     color: var(--black);
-    font-family: Raleway;
     font-weight: 800;
     font-size: 34px;
     line-height: 39.92px;
@@ -195,4 +212,83 @@ nav {
     font-size: 24px;
     color: var(--black);
     padding: 10px 0;
+}
+
+.case-studies img {
+    border-radius: var(--br);
+}
+
+/* Testimonials session */
+.testimonials {
+    background-color: var(--black);
+    padding: 80px;
+}
+.client-info {
+    /* background-color: var(--black); */
+    background: linear-gradient(90deg, #484848 1.24%, rgba(27, 27, 27, 0) 100%);
+    border: 1px solid;
+    border-image-source: linear-gradient(90deg, #484848 1.24%, rgba(27, 27, 27, 0) 100%);
+    position: relative;
+    border-radius: 6px;
+    padding: 30px;
+}
+
+.client-info .tag {
+    position: absolute;
+    left: 12px;
+    top: -12px;
+}
+
+.testimonials h2 {
+    font-size: 34px;
+    color: var(--white);
+}
+
+.testimonials h3 {
+    padding: 30px 0 15px;
+    justify-content: left;
+    align-items: center;
+    color: var(--white);
+    font-size: 18px;
+}
+
+.testimonials h3 img {
+    border-radius: 50%;
+    margin-right: 15px;
+}
+
+/* Recent Work Session */
+.recent-work {
+    background-color: var(--dark-white);
+    padding: 80px 0;
+}
+
+.recent-work-info {
+    padding-bottom: 40px;
+}
+.recent-work-text p {
+    padding-bottom: 20px;
+}
+
+.recent-work img {
+    border-radius: var(--br);
+}
+
+.recent-work-images img:first-child,
+.recent-work-images img:last-child {
+    border: 1px solid #9C9C9C;
+    border-radius: 50%;
+    padding: 10px;
+    /* background: #9C9C9C; */
+}
+
+.recent-work-images img:first-child:hover,
+.recent-work-images img:last-child:hover {
+    transform: matrix(-1, 0, 0, 1, 0, 0);
+}
+
+.recent-work .grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 180px;
+
 }
